@@ -1,0 +1,195 @@
+{
+  "name": "Jensen Huang: NVIDIA and the AI Revolution",
+  "children": [
+    {
+      "name": "Extreme Co-Design",
+      "children": [
+        {
+          "name": "Definition",
+          "children": [
+            {
+              "name": "Optimizing entire stack"
+            },
+            {
+              "name": "Chips to algorithms"
+            },
+            {
+              "name": "Rack and data center scale"
+            }
+          ]
+        },
+        {
+          "name": "Necessity",
+          "children": [
+            {
+              "name": "Problems exceed single GPU"
+            },
+            {
+              "name": "Distributed computing complexity"
+            },
+            {
+              "name": "Amdahl's Law challenges"
+            },
+            {
+              "name": "Moore's Law slowing"
+            }
+          ]
+        },
+        {
+          "name": "Components",
+          "children": [
+            {
+              "name": "GPU and CPU"
+            },
+            {
+              "name": "NVLink and Networking"
+            },
+            {
+              "name": "Power and Liquid Cooling"
+            },
+            {
+              "name": "High Bandwidth Memory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NVIDIA Strategy and Philosophy",
+      "children": [
+        {
+          "name": "Organizational Structure",
+          "children": [
+            {
+              "name": "60 direct reports"
+            },
+            {
+              "name": "No one-on-ones"
+            },
+            {
+              "name": "Collective reasoning meetings"
+            },
+            {
+              "name": "Shaping belief systems"
+            }
+          ]
+        },
+        {
+          "name": "Strategic Bets",
+          "children": [
+            {
+              "name": "CUDA on GeForce"
+            },
+            {
+              "name": "Deep Learning pivot"
+            },
+            {
+              "name": "Mellanox acquisition"
+            }
+          ]
+        },
+        {
+          "name": "Speed of Light Thinking",
+          "children": [
+            {
+              "name": "Test against physical limits"
+            },
+            {
+              "name": "First principles engineering"
+            },
+            {
+              "name": "Zero-based design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI Scaling Laws",
+      "children": [
+        {
+          "name": "Pre-training: Data scaling"
+        },
+        {
+          "name": "Post-training: Synthetic data"
+        },
+        {
+          "name": "Test time: Inference and reasoning"
+        },
+        {
+          "name": "Agentic: Multi-agent teams"
+        }
+      ]
+    },
+    {
+      "name": "The Future of Computing",
+      "children": [
+        {
+          "name": "AI Factories",
+          "children": [
+            {
+              "name": "Generative vs Retrieval"
+            },
+            {
+              "name": "Revenue generation units"
+            },
+            {
+              "name": "Tokenization of economy"
+            }
+          ]
+        },
+        {
+          "name": "Agentic Systems",
+          "children": [
+            {
+              "name": "Digital workers"
+            },
+            {
+              "name": "Tool-use and research"
+            },
+            {
+              "name": "OpenClaw and OpenShell"
+            }
+          ]
+        },
+        {
+          "name": "Global Infrastructure",
+          "children": [
+            {
+              "name": "Power grid efficiency"
+            },
+            {
+              "name": "Graceful degradation"
+            },
+            {
+              "name": "Supply chain orchestration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Personal Leadership Insights",
+      "children": [
+        {
+          "name": "Endurance and suffering"
+        },
+        {
+          "name": "Mind of a child"
+        },
+        {
+          "name": "Systematic forgetting"
+        },
+        {
+          "name": "Tolerance for embarrassment"
+        },
+        {
+          "name": "Intelligence as a commodity"
+        },
+        {
+          "name": "Elevating humanity"
+        }
+      ]
+    }
+  ]
+}

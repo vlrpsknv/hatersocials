@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jensen Huang x Lex Fridman — Content Pack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #e5e5e5; }
+        .glass { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); }
+        .glass-hover:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.15); }
+        .tag { background: rgba(118,210,117,0.12); color: #76d275; border: 1px solid rgba(118,210,117,0.2); }
+        .tag-blue { background: rgba(96,165,250,0.12); color: #60a5fa; border: 1px solid rgba(96,165,250,0.2); }
+        .tag-purple { background: rgba(167,139,250,0.12); color: #a78bfa; border: 1px solid rgba(167,139,250,0.2); }
+        .copy-btn { transition: all 0.2s; }
+        .copy-btn:hover { background: rgba(255,255,255,0.1); }
+        .copy-btn.copied { background: rgba(118,210,117,0.15); color: #76d275; }
+        .section-line { height: 1px; background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, transparent 100%); }
+        .mind-node { border-left: 2px solid rgba(255,255,255,0.1); }
+        .mind-node:hover { border-left-color: rgba(118,210,117,0.5); }
+        audio::-webkit-media-controls-panel { background: rgba(255,255,255,0.05); }
+        ::selection { background: rgba(118,210,117,0.3); }
+        .tab-btn { transition: all 0.2s; }
+        .tab-btn.active { background: rgba(255,255,255,0.08); color: white; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .stat-num { font-variant-numeric: tabular-nums; }
+        .hook-tag { font-size: 9px; padding: 2px 6px; border-radius: 4px; background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 0.05em; }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header -->
+    <div class="max-w-5xl mx-auto px-6 pt-16 pb-8">
+        <div class="flex items-center gap-3 mb-6">
+            <span class="tag text-xs font-medium px-2.5 py-1 rounded-full">Content Pack v2</span>
+            <span class="text-neutral-500 text-sm">Mar 24, 2026</span>
+            <span class="text-neutral-700 text-sm">18 posts + podcast + report + slides + infographic</span>
+        </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4">
+            Jensen Huang: NVIDIA &<br>The AI Revolution
+        </h1>
+        <p class="text-neutral-400 text-lg max-w-2xl">
+            Lex Fridman Podcast #494. 4 hours distilled into everything you need.
+        </p>
+        <a href="https://www.youtube.com/watch?v=vif8NQcjVf0" target="_blank"
+           class="inline-flex items-center gap-2 mt-6 text-sm text-neutral-400 hover:text-white transition-colors">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/><polygon fill="#0a0a0a" points="9.545,15.568 15.818,12 9.545,8.432"/></svg>
+            Watch original
+        </a>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-10">
+            <div class="glass rounded-xl p-4 text-center">
+                <p class="text-2xl font-bold text-white stat-num">$1.5B</p>
+                <p class="text-xs text-neutral-500 mt-1">NVIDIA's bottom</p>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <p class="text-2xl font-bold text-white stat-num">$4T</p>
+                <p class="text-xs text-neutral-500 mt-1">NVIDIA today</p>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <p class="text-2xl font-bold text-white stat-num">60</p>
+                <p class="text-xs text-neutral-500 mt-1">direct reports, 0 one-on-ones</p>
+            </div>
+            <div class="glass rounded-xl p-4 text-center">
+                <p class="text-2xl font-bold text-white stat-num">1.3M</p>
+                <p class="text-xs text-neutral-500 mt-1">components per rack</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-line max-w-5xl mx-auto"></div>
+
+    <!-- Podcast -->
+    <div class="max-w-5xl mx-auto px-6 py-10">
+        <h2 class="text-lg font-bold text-white mb-4">Podcast</h2>
+        <div class="glass rounded-2xl p-6">
+            <p class="text-sm text-neutral-400 mb-3">Why Jensen Huang bet everything on AI</p>
+            <audio controls class="w-full" style="height:40px">
+                <source src="jensen_huang_podcast.mp3" type="audio/mpeg">
+            </audio>
+            <p class="text-xs text-neutral-600 mt-3">Generated by Google NotebookLM from the full 4-hour interview</p>
+        </div>
+    </div>
+
+    <div class="section-line max-w-5xl mx-auto"></div>
+
+    <!-- Downloads -->
+    <div class="max-w-5xl mx-auto px-6 py-10">
+        <h2 class="text-lg font-bold text-white mb-4">Downloads</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <a href="jensen_slides.pdf" class="glass rounded-xl p-4 glass-hover transition-all block text-center">
+                <p class="text-sm text-white font-semibold">Slides</p>
+                <p class="text-xs text-neutral-500 mt-1">.pdf</p>
+            </a>
+            <a href="jensen_infographic.png" target="_blank" class="glass rounded-xl p-4 glass-hover transition-all block text-center">
+                <p class="text-sm text-white font-semibold">Infographic</p>
+                <p class="text-xs text-neutral-500 mt-1">.png</p>
+            </a>
+            <a href="jensen_report.md" class="glass rounded-xl p-4 glass-hover transition-all block text-center">
+                <p class="text-sm text-white font-semibold">Report</p>
+                <p class="text-xs text-neutral-500 mt-1">.md</p>
+            </a>
+            <a href="mindmap_jensen.json" class="glass rounded-xl p-4 glass-hover transition-all block text-center">
+                <p class="text-sm text-white font-semibold">Mind Map</p>
+                <p class="text-xs text-neutral-500 mt-1">.json</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="section-line max-w-5xl mx-auto"></div>
+
+    <!-- Key Takeaways -->
+    <div class="max-w-5xl mx-auto px-6 py-10">
+        <h2 class="text-lg font-bold text-white mb-6">Key Takeaways</h2>
+        <div class="space-y-4">
+            <details class="glass rounded-xl group" open>
+                <summary class="p-5 cursor-pointer flex items-center justify-between">
+                    <div class="flex items-center gap-3"><span class="text-xs text-neutral-600 font-mono">01</span><span class="text-white font-semibold text-sm">From Chips to AI Factories</span></div>
+                    <svg class="w-4 h-4 text-neutral-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-neutral-400 leading-relaxed">Old computing = warehouses (store and retrieve). New computing = factories (produce tokens). NVIDIA designs entire racks as single systems: GPU, CPU, NVLink, memory, cooling, power. "Extreme Co-Design." Problems exceed single GPUs, Moore's Law is slowing.</div>
+            </details>
+            <details class="glass rounded-xl group">
+                <summary class="p-5 cursor-pointer flex items-center justify-between">
+                    <div class="flex items-center gap-3"><span class="text-xs text-neutral-600 font-mono">02</span><span class="text-white font-semibold text-sm">4 Scaling Laws</span></div>
+                    <svg class="w-4 h-4 text-neutral-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-neutral-400 leading-relaxed"><strong class="text-neutral-300">Pre-training</strong> (reading): more data = smarter. <strong class="text-neutral-300">Post-training</strong> (augmentation): synthetic data. <strong class="text-neutral-300">Test-time</strong> (thinking): reasoning during inference, 100x more compute. <strong class="text-neutral-300">Agentic</strong> (multiplication): sub-agents for complex workflows. Punchline: compute is the bottleneck, not data.</div>
+            </details>
+            <details class="glass rounded-xl group">
+                <summary class="p-5 cursor-pointer flex items-center justify-between">
+                    <div class="flex items-center gap-3"><span class="text-xs text-neutral-600 font-mono">03</span><span class="text-white font-semibold text-sm">The CUDA Moat</span></div>
+                    <svg class="w-4 h-4 text-neutral-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-neutral-400 leading-relaxed">NVIDIA's moat isn't chips. It's the CUDA install base. Millions of devs trust code written for CUDA will work for decades. To build this, Jensen put CUDA on every GeForce, crushing margins to $1.5B market cap. Deep learning was discovered on those gaming cards. $1.5B to $4T.</div>
+            </details>
+            <details class="glass rounded-xl group">
+                <summary class="p-5 cursor-pointer flex items-center justify-between">
+                    <div class="flex items-center gap-3"><span class="text-xs text-neutral-600 font-mono">04</span><span class="text-white font-semibold text-sm">60 Reports, Zero 1-on-1s</span></div>
+                    <svg class="w-4 h-4 text-neutral-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-neutral-400 leading-relaxed">60+ direct reports, no 1-on-1s. Group reasoning sessions. "Shaping belief systems." "Speed of light thinking" = measure against physical limits, design backward from physics. "Systematic forgetting" = deliberately forget past solutions to avoid anchoring.</div>
+            </details>
+            <details class="glass rounded-xl group">
+                <summary class="p-5 cursor-pointer flex items-center justify-between">
+                    <div class="flex items-center gap-3"><span class="text-xs text-neutral-600 font-mono">05</span><span class="text-white font-semibold text-sm">Supply Chain on Trust</span></div>
+                    <svg class="w-4 h-4 text-neutral-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-neutral-400 leading-relaxed">Vera Rubin rack: 1.3M components, 2-3 tons, shipped fully assembled. 200+ suppliers. TSMC partnership on "trust without a contract." Assembly moved from data centers to factories with gigawatt-scale power testing.</div>
+            </details>
+            <details class="glass rounded-xl group">
+                <summary class="p-5 cursor-pointer flex items-center justify-between">
+                    <div class="flex items-center gap-3"><span class="text-xs text-neutral-600 font-mono">06</span><span class="text-white font-semibold text-sm">Intelligence as Commodity</span></div>
+                    <svg class="w-4 h-4 text-neutral-600 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </summary>
+                <div class="px-5 pb-5 text-sm text-neutral-400 leading-relaxed">AI factories produce tokens like factories produce goods. Agentic AI is the "iPhone moment" for token consumption. Global GDP on compute grows 100x. Intelligence becomes commodity. What doesn't? Humanity: character, compassion, generosity.</div>
+            </details>
+        </div>
+    </div>
+
+    <div class="section-line max-w-5xl mx-auto"></div>
+
+    <!-- Social Posts v3 — curated from 3 agent teams -->
+    <div class="max-w-5xl mx-auto px-6 py-10">
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-lg font-bold text-white">Social Posts <span class="text-neutral-600 font-normal text-sm ml-2">30 posts, click to copy</span></h2>
+        </div>
+
+        <div class="flex gap-2 mb-6 flex-wrap">
+            <button onclick="showTab('threads')" class="tab-btn active text-sm px-4 py-2 rounded-lg text-neutral-400">Threads (12)</button>
+            <button onclick="showTab('x')" class="tab-btn text-sm px-4 py-2 rounded-lg text-neutral-400">X / Twitter (14)</button>
+            <button onclick="showTab('linkedin')" class="tab-btn text-sm px-4 py-2 rounded-lg text-neutral-400">LinkedIn (4)</button>
+        </div>
+
+        <!-- THREADS -->
+        <div id="tab-threads" class="tab-content active space-y-3">
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">contrarian proof</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="У Jensen Huang 60 прямых подчинённых и ноль ван-ту-ванов. Компания стоит $4 триллиона. У твоего тимлида 5 человек и 4 стендапа в неделю.">У Jensen Huang 60 прямых подчинённых и ноль ван-ту-ванов. Компания стоит $4 триллиона. У твоего тимлида 5 человек и 4 стендапа в неделю.</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#management</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">hard truth</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Человеческие данные закончились. Буквально. AI теперь тренируется на данных, которые сам же и сгенерировал. Мы больше не учителя. Мы были стартовый датасет.">Человеческие данные закончились. Буквально. AI теперь тренируется на данных, которые сам же и сгенерировал. Мы больше не учителя. Мы были стартовый датасет.</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#ai</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">relatable frustration</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Один AI запускает 50 суб-агентов, которые работают параллельно. А ты до сих пор ждёшь аппрув на макет в фигме от человека, который в отпуске.">Один AI запускает 50 суб-агентов, которые работают параллельно. А ты до сих пор ждёшь аппрув на макет в фигме от человека, который в отпуске.</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#ai</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">contrarian proof</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="NVIDIA и TSMC. Сделка на триллионы долларов. Без контракта. На доверии. А у тебя NDA на три страницы чтобы показать фрилансеру мудборд.">NVIDIA и TSMC. Сделка на триллионы долларов. Без контракта. На доверии. А у тебя NDA на три страницы чтобы показать фрилансеру мудборд.</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#tech</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">ironic twist</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Jensen Huang практикует &quot;систематическое забывание&quot;. Намеренно выбрасывает из головы прошлые решения, чтобы не якориться. А тебя на собесе спрашивают &quot;расскажите о прошлом опыте.&quot;">Jensen Huang практикует "систематическое забывание". Намеренно выбрасывает из головы прошлые решения, чтобы не якориться. А тебя на собесе спрашивают "расскажите о прошлом опыте."</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#продуктивность</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">narrative judo</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Все боятся что AI заберет работу. А надо бояться другого. Интеллект становится commodity. &quot;Я умный&quot; перестанет быть преимуществом. Останется только &quot;мне не все равно.&quot;">Все боятся что AI заберет работу. А надо бояться другого. Интеллект становится commodity. "Я умный" перестанет быть преимуществом. Останется только "мне не все равно."</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#ai</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">uncomfortable mirror</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Думать стоит в 100 раз дороже чем читать. Даже для машин. Поэтому все копируют код из ChatGPT, но никто не может объяснить, как он работает.">Думать стоит в 100 раз дороже чем читать. Даже для машин. Поэтому все копируют код из ChatGPT, но никто не может объяснить, как он работает.</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#ai</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">punchline</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Ты промптишь одного агента. NVIDIA проектирует системы где 50 агентов решают одну задачу одновременно. Ты не используешь ИИ. Ты играешь в ИИ.">Ты промптишь одного агента. NVIDIA проектирует системы где 50 агентов решают одну задачу одновременно. Ты не используешь ИИ. Ты играешь в ИИ.</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#ai</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">relatable frustration</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Если у тебя 5 человек в команде и ты не успеваешь, проблема не во встречах. У Jensen Huang 60 подчинённых. Ноль ван-ту-ванов. Может тебе просто нравится чувствовать себя занятым.">Если у тебя 5 человек в команде и ты не успеваешь, проблема не во встречах. У Jensen Huang 60 подчинённых. Ноль ван-ту-ванов. Может тебе просто нравится чувствовать себя занятым.</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#management</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">hard truth</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="NVIDIA сознательно убила свою маржу. Засунула CUDA в каждую геймерскую видеокарту, хотя это было убыточно. Компания упала до $1.5B. Сейчас $4T. Стратегия это то, что больно прямо сейчас.">NVIDIA сознательно убила свою маржу. Засунула CUDA в каждую геймерскую видеокарту, хотя это было убыточно. Компания упала до $1.5B. Сейчас $4T. Стратегия это то, что больно прямо сейчас.</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#tech</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">existential</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Хуанг: интеллект стал товаром. Единственное что нельзя превратить в товар это человечность. Вопрос: твой дизайн это интеллект или человечность?">Хуанг: интеллект стал товаром. Единственное что нельзя превратить в товар это человечность. Вопрос: твой дизайн это интеллект или человечность?</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#ai</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">narrative judo</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Мы думаем что ИИ это что-то воздушное, в облаке. Нет. Один серверный шкаф NVIDIA весит 3 тонны и состоит из 1.3 миллиона компонентов. Это тяжелая промышленность. Просто с интерфейсом чат-бота.">Мы думаем что ИИ это что-то воздушное, в облаке. Нет. Один серверный шкаф NVIDIA весит 3 тонны и состоит из 1.3 миллиона компонентов. Это тяжелая промышленность. Просто с интерфейсом чат-бота.</p>
+                <p class="text-[10px] text-neutral-600 mt-2">#tech</p>
+            </div>
+        </div>
+
+        <!-- X / TWITTER -->
+        <div id="tab-x" class="tab-content space-y-3">
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">hard truth</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Intelligence is about to be free. Taste never will be.">Intelligence is about to be free. Taste never will be.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">contrarian proof</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Jensen Huang has 60 direct reports and zero one-on-ones. Built a $4T company. Your manager with 5 reports needs a Tuesday sync to ask how you're feeling.">Jensen Huang has 60 direct reports and zero one-on-ones. Built a $4T company. Your manager with 5 reports needs a Tuesday sync to ask how you're feeling.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">label the unnamed</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Reading is cheap. Thinking is 100x more expensive. Even for machines. That's the entire AI hardware economy in one sentence.">Reading is cheap. Thinking is 100x more expensive. Even for machines. That's the entire AI hardware economy in one sentence.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">exponential contrast</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="NVIDIA put CUDA on every $199 gaming GPU. Margins crashed. Wall Street screamed. That decision built a $4T company. Short-term pain tolerance is the real moat.">NVIDIA put CUDA on every $199 gaming GPU. Margins crashed. Wall Street screamed. That decision built a $4T company. Short-term pain tolerance is the real moat.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">contrarian proof</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="NVIDIA and TSMC built a $4T partnership on a handshake. No contract. Your company needs 3 weeks of legal review to approve a $500 SaaS tool.">NVIDIA and TSMC built a $4T partnership on a handshake. No contract. Your company needs 3 weeks of legal review to approve a $500 SaaS tool.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">escalating</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="One AI agent spawns 50 sub-agents to do its work. Your client isn't replacing you with AI. Your client's AI is outsourcing you to cheaper AI.">One AI agent spawns 50 sub-agents to do its work. Your client isn't replacing you with AI. Your client's AI is outsourcing you to cheaper AI.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">hard truth</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Human data ran out. AI trains on data it generates itself. We were the training set. The dataset is exhausted.">Human data ran out. AI trains on data it generates itself. We were the training set. The dataset is exhausted.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">name a mode</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="AI has 4 scaling laws. Reading. Augmentation. Thinking. Multiplication. The first three make AI smarter. The fourth one makes AI hire itself.">AI has 4 scaling laws. Reading. Augmentation. Thinking. Multiplication. The first three make AI smarter. The fourth one makes AI hire itself.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">contrarian proof</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Jensen Huang deliberately forgets how he solved problems before. Not because he's old. Because past solutions anchor your thinking. He calls it systematic forgetting. Most companies call it losing institutional knowledge.">Jensen Huang deliberately forgets how he solved problems before. Not because he's old. Because past solutions anchor your thinking. He calls it systematic forgetting. Most companies call it losing institutional knowledge.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">perspective shift</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Intelligence becomes a commodity. The thing that won't: the willingness to look stupid for 10 years while your bet plays out. Jensen Huang did exactly that.">Intelligence becomes a commodity. The thing that won't: the willingness to look stupid for 10 years while your bet plays out. Jensen Huang did exactly that.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">reframe</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Data centers used to store information. Now they produce intelligence. We renamed warehouses to factories and nobody noticed the biggest industrial shift since electricity.">Data centers used to store information. Now they produce intelligence. We renamed warehouses to factories and nobody noticed the biggest industrial shift since electricity.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">perspective shift</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="NVIDIA nearly died three times on the way from $1.5B to $4T. You can't tell the difference between &quot;this is failing&quot; and &quot;this is about to become the most valuable company on earth.&quot; They feel identical.">NVIDIA nearly died three times on the way from $1.5B to $4T. You can't tell the difference between "this is failing" and "this is about to become the most valuable company on earth." They feel identical.</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">relatable</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Your startup optimizes features. NVIDIA optimizes from atoms to algorithms. You call your Figma-to-React pipeline &quot;full stack.&quot;">Your startup optimizes features. NVIDIA optimizes from atoms to algorithms. You call your Figma-to-React pipeline "full stack."</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-4 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-2"><span class="hook-tag">reframe</span><span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span></div>
+                <p class="text-sm text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Jensen's first question about any process: &quot;What's the speed of light for this?&quot; Not how fast is it now. What's the theoretical maximum. Then work backward. Most teams never even ask.">Jensen's first question about any process: "What's the speed of light for this?" Not how fast is it now. What's the theoretical maximum. Then work backward. Most teams never even ask.</p>
+            </div>
+        </div>
+
+        <!-- LINKEDIN -->
+        <div id="tab-linkedin" class="tab-content space-y-4">
+
+            <div class="social-card glass rounded-xl p-5 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2"><span class="tag-purple text-[10px] px-2 py-0.5 rounded-full">The Moat Question</span><span class="hook-tag">story</span></div>
+                    <span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span>
+                </div>
+                <p class="text-[13px] text-neutral-300 leading-relaxed whitespace-pre-line" data-post="In 2006, a GPU company made a decision that nearly killed it.
+
+They put CUDA on every consumer gaming card. Margins collapsed. Market cap hit $1.5 billion.
+
+But millions of developers got free GPU computing. Deep learning was born on those exact GPUs.
+
+That company is now worth $4 trillion.
+
+The lesson isn't &quot;take big risks.&quot; It's more specific: know which asset compounds over decades, then sacrifice everything else to build it.
+
+For NVIDIA, that asset was developers writing code for their platform who would never switch. Not the silicon. Not the patents. The people.
+
+What are you building that will still compound in 2040?
+
+Source in comments.">In 2006, a GPU company made a decision that nearly killed it.
+
+They put CUDA on every consumer gaming card. Margins collapsed. Market cap hit $1.5 billion.
+
+But millions of developers got free GPU computing. Deep learning was born on those exact GPUs.
+
+That company is now worth $4 trillion.
+
+The lesson isn't "take big risks." It's more specific: know which asset compounds over decades, then sacrifice everything else to build it.
+
+For NVIDIA, that asset was developers writing code for their platform who would never switch. Not the silicon. Not the patents. The people.
+
+What are you building that will still compound in 2040?
+
+Source in comments.</p>
+                <p class="text-[10px] text-neutral-600 mt-3">Comment: link + #Strategy #AI #ProductDesign</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-5 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2"><span class="tag-purple text-[10px] px-2 py-0.5 rounded-full">Thinking Is Expensive</span><span class="hook-tag">label the unnamed</span></div>
+                    <span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span>
+                </div>
+                <p class="text-[13px] text-neutral-300 leading-relaxed whitespace-pre-line" data-post="&quot;Thinking is harder than reading.&quot;
+
+Reading: models scan the internet, absorb patterns, generate text. Cheap.
+
+Thinking: models reason, plan, check their own logic during inference. 100x more compute.
+
+That's why the company selling GPUs is worth $4 trillion while model companies race to cut prices. The bottleneck isn't who has the best model. It's who has enough compute to let models actually think.
+
+For product builders: the AI features you ship today are &quot;reading&quot; features. Autocomplete. Summarization. The next generation involves thinking. And it costs 100x more to run.
+
+If your pricing model assumes AI gets cheaper every year, reconsider.
+
+Source in comments.">"Thinking is harder than reading."
+
+Reading: models scan the internet, absorb patterns, generate text. Cheap.
+
+Thinking: models reason, plan, check their own logic during inference. 100x more compute.
+
+That's why the company selling GPUs is worth $4 trillion while model companies race to cut prices. The bottleneck isn't who has the best model. It's who has enough compute to let models actually think.
+
+For product builders: the AI features you ship today are "reading" features. Autocomplete. Summarization. The next generation involves thinking. And it costs 100x more to run.
+
+If your pricing model assumes AI gets cheaper every year, reconsider.
+
+Source in comments.</p>
+                <p class="text-[10px] text-neutral-600 mt-3">Comment: link + #AI #ProductDesign #ScalingLaws</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-5 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2"><span class="tag-purple text-[10px] px-2 py-0.5 rounded-full">Systematic Forgetting</span><span class="hook-tag">contrarian proof</span></div>
+                    <span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span>
+                </div>
+                <p class="text-[13px] text-neutral-300 leading-relaxed whitespace-pre-line" data-post="Most product teams improve things. The best ones forget things.
+
+Jensen Huang calls it &quot;systematic forgetting.&quot; Deliberately let go of past solutions because they anchor your thinking to a local maximum.
+
+Not &quot;how do we improve v2?&quot; but &quot;what would we build if nothing existed?&quot;
+
+30 years of legacy. 200+ suppliers. And they still start from zero each cycle. Every two years, a new architecture that makes the previous one obsolete.
+
+The hardest constraint to question is always the one you inherited without noticing. The framework from v1. The user flow that &quot;works fine.&quot;
+
+Incremental thinking can't produce something 10x better. Only zero-based thinking can.
+
+Source in comments.">Most product teams improve things. The best ones forget things.
+
+Jensen Huang calls it "systematic forgetting." Deliberately let go of past solutions because they anchor your thinking to a local maximum.
+
+Not "how do we improve v2?" but "what would we build if nothing existed?"
+
+30 years of legacy. 200+ suppliers. And they still start from zero each cycle. Every two years, a new architecture that makes the previous one obsolete.
+
+The hardest constraint to question is always the one you inherited without noticing. The framework from v1. The user flow that "works fine."
+
+Incremental thinking can't produce something 10x better. Only zero-based thinking can.
+
+Source in comments.</p>
+                <p class="text-[10px] text-neutral-600 mt-3">Comment: link + #ProductDesign #FirstPrinciples</p>
+            </div>
+
+            <div class="social-card glass rounded-xl p-5 glass-hover cursor-pointer" onclick="copyPost(this)">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2"><span class="tag-purple text-[10px] px-2 py-0.5 rounded-full">4 Scaling Laws</span><span class="hook-tag">framework</span></div>
+                    <span class="copy-btn text-xs text-neutral-600 px-2 py-1 rounded-md">copy</span>
+                </div>
+                <p class="text-[13px] text-neutral-300 leading-relaxed whitespace-pre-line" data-post="AI scaling has 4 phases. Most companies are stuck in phase 1.
+
+Phase 1: Reading. More data, bigger model, smarter. GPT-3 to GPT-4.
+
+Phase 2: Augmentation. Human data ran out. Model generates its own training data.
+
+Phase 3: Thinking. Model reasons during inference. 100x more compute. This is o1, o3, Claude's extended thinking.
+
+Phase 4: Multiplication. One AI spawns teams of sub-agents. No single model. A system solving problems.
+
+Every phase increases compute demand. Synthetic data is unlimited. Thinking burns exponentially more. Agents multiply everything.
+
+Companies betting &quot;AI will get cheaper&quot; are betting against all four phases simultaneously.
+
+Source in comments.">AI scaling has 4 phases. Most companies are stuck in phase 1.
+
+Phase 1: Reading. More data, bigger model, smarter. GPT-3 to GPT-4.
+
+Phase 2: Augmentation. Human data ran out. Model generates its own training data.
+
+Phase 3: Thinking. Model reasons during inference. 100x more compute. This is o1, o3, Claude's extended thinking.
+
+Phase 4: Multiplication. One AI spawns teams of sub-agents. No single model. A system solving problems.
+
+Every phase increases compute demand. Synthetic data is unlimited. Thinking burns exponentially more. Agents multiply everything.
+
+Companies betting "AI will get cheaper" are betting against all four phases simultaneously.
+
+Source in comments.</p>
+                <p class="text-[10px] text-neutral-600 mt-3">Comment: link + #AI #Strategy #ScalingLaws</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mind Map -->
+    <div class="section-line max-w-5xl mx-auto"></div>
+    <div class="max-w-5xl mx-auto px-6 py-10">
+        <h2 class="text-lg font-bold text-white mb-6">Mind Map</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div class="glass rounded-xl p-5 glass-hover transition-all">
+                <h3 class="text-xs font-semibold text-white mb-3">Extreme Co-Design</h3>
+                <div class="space-y-2 text-xs text-neutral-400">
+                    <div class="mind-node pl-3 py-1">Whole stack optimization: chips, algorithms, rack, data center</div>
+                    <div class="mind-node pl-3 py-1">GPU/CPU, NVLink, liquid cooling, HBM</div>
+                    <div class="mind-node pl-3 py-1">Moore's Law slowing, Amdahl's Law as primary obstacle</div>
+                </div>
+            </div>
+            <div class="glass rounded-xl p-5 glass-hover transition-all">
+                <h3 class="text-xs font-semibold text-white mb-3">NVIDIA Strategy</h3>
+                <div class="space-y-2 text-xs text-neutral-400">
+                    <div class="mind-node pl-3 py-1">60 direct reports, collective reasoning, no 1-on-1s</div>
+                    <div class="mind-node pl-3 py-1">CUDA on GeForce, deep learning pivot, Mellanox</div>
+                    <div class="mind-node pl-3 py-1">Speed of light thinking, zero-based design</div>
+                </div>
+            </div>
+            <div class="glass rounded-xl p-5 glass-hover transition-all">
+                <h3 class="text-xs font-semibold text-white mb-3">AI Scaling Laws</h3>
+                <div class="space-y-2 text-xs text-neutral-400">
+                    <div class="mind-node pl-3 py-1">Reading, Augmentation, Thinking, Multiplication</div>
+                    <div class="mind-node pl-3 py-1">Data no longer bottleneck, compute is</div>
+                </div>
+            </div>
+            <div class="glass rounded-xl p-5 glass-hover transition-all">
+                <h3 class="text-xs font-semibold text-white mb-3">Future of Computing</h3>
+                <div class="space-y-2 text-xs text-neutral-400">
+                    <div class="mind-node pl-3 py-1">AI Factories: warehouses become production lines for tokens</div>
+                    <div class="mind-node pl-3 py-1">Agentic AI as "iPhone moment" for token consumption</div>
+                    <div class="mind-node pl-3 py-1">100x growth in GDP allocated to compute</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="max-w-5xl mx-auto px-6 py-12 text-center border-t border-neutral-900">
+        <p class="text-xs text-neutral-700">Generated with NotebookLM + Claude Code</p>
+    </div>
+
+    <script>
+    function copyPost(card) {
+        const postEl = card.querySelector('[data-post]');
+        const text = postEl.getAttribute('data-post').replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = card.querySelector('.copy-btn');
+            btn.textContent = 'copied!';
+            btn.classList.add('copied');
+            setTimeout(() => { btn.textContent = 'copy'; btn.classList.remove('copied'); }, 2000);
+        });
+    }
+    function showTab(name) {
+        document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+        document.getElementById('tab-' + name).classList.add('active');
+        event.target.classList.add('active');
+    }
+    </script>
+</body>
+</html>
