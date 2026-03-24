@@ -1,0 +1,26 @@
+{
+  "threads": [
+    {"tag": "inversion", "text": "Anthropic отказалась снимать ограничения с ИИ для Пентагона. Пентагон в ответ пытается их уничтожить. То есть компания, которая делает ИИ безопасным, теперь враг государства. А компания, которая продала ИИ военным, молодец. Записал."},
+    {"tag": "scale punch", "text": "2.5 миллиона человек удалили ChatGPT. Девятьсот сотрудников OpenAI подписали открытое письмо. Пикеты у офиса. А Альтман постит селфи из Пентагона."},
+    {"tag": "cold observation", "text": "Дорси уволил 4000 человек. Акции выросли на 24%. Вот и вся правда о рынке: твоё увольнение это чей-то зеленый график."},
+    {"tag": "timeline callout", "text": "CEO Atlassian в октябре: \"мы будем нанимать ЕЩЁ больше инженеров.\" CEO Atlassian в марте: уволил 1600 человек, из них 900 инженеров. Причина? ИИ. Пять месяцев. Чувак даже не выждал приличный срок."},
+    {"tag": "stat with a twist", "text": "46% нового кода пишет ИИ. 92% разработчиков используют ИИ-инструменты. Код от ИИ содержит в 1.7 раза больше багов. То есть мы автоматизировали производство багов. Масштабировали. Это и называется прогресс."},
+    {"tag": "question-provocation", "text": "Триллион долларов испарился с SaaS-акций за месяц. Потому что люди задали простой вопрос: а зачем мне платить $200 в месяц за Jira, если я за 20 минут собрал трекер сам?"},
+    {"tag": "counter-narrative", "text": "Янн ЛеКун ушел из Meta, поднял миллиард долларов и говорит что LLM это тупик. Мужик буквально изобрёл основы, на которых стоят все эти модели. И говорит: не туда копаете. Может стоит послушать."},
+    {"tag": "cultural irony", "text": "Kagi сделал переводчик любого текста в LinkedIn-язык. 8 миллионов просмотров на один скриншот. Людям не нужен ИИ чтобы писать как на LinkedIn. Людям нужен ИИ чтобы смеяться над теми, кто пишет как на LinkedIn."},
+    {"tag": "dry fact", "text": "45 тысяч увольнений в IT за март. 20% компаний прямо в пресс-релизе написали: из-за ИИ. Даже не шепотом. Даже не \"реструктуризация\". Прямо: ИИ. Спасибо за честность, что ли."},
+    {"tag": "irony", "text": "Apple платит Google миллиард в год за то, чтобы Siri работала на Gemini. Компания с тремя триллионами капитализации не смогла сделать свой LLM. Но наклейку \"Designed by Apple in California\" наверняка поставят."}
+  ],
+  "x": [
+    {"tag": "sharp inversion", "text": "Anthropic refused to remove AI safety guardrails for the Pentagon. The Pentagon is now trying to bankrupt them. The company building safe AI is the enemy. The company selling AI to the military is the hero."},
+    {"tag": "scale punch", "text": "2.5 million people deleted ChatGPT. 900 employees signed an open letter. Protests outside HQ. Sam Altman posted a selfie from the Pentagon. Reading the room has never been his thing."},
+    {"tag": "cold observation", "text": "Jack Dorsey fired 4,000 people. Stock went up 24%. Your career is someone else's green candle."},
+    {"tag": "timeline callout", "text": "Atlassian CEO in October: \"We're hiring MORE engineers.\" Atlassian CEO in March: fires 1,600 people, 900 of them engineers. Blamed AI. Didn't even wait six months."},
+    {"tag": "reframe", "text": "46% of new code is AI-generated. AI code has 1.7x more bugs. We didn't automate software engineering. We automated bug production at scale."},
+    {"tag": "simple question", "text": "$1 trillion wiped from SaaS stocks because people asked one question: why am I paying $200/mo for a project tracker I can vibe-code in 20 minutes?"},
+    {"tag": "authority flip", "text": "Yann LeCun raised $1B saying LLMs are a dead end. This is the guy who built the foundations these models stand on. When the architect says the building is wrong, maybe don't keep adding floors."},
+    {"tag": "absurd fact", "text": "Apple is paying Google $1B a year to make Siri work. A $3 trillion company admitted it can't build its own LLM. But I'm sure the integration will be seamless and delightful."},
+    {"tag": "raw stat", "text": "45,000 tech layoffs in March. 20% of companies said it directly in the press release: because of AI. Not whispered. Not \"restructuring.\" They typed the words."},
+    {"tag": "cultural observation", "text": "Kagi built a tool that translates any text into LinkedIn-speak. 8M views on one screenshot. We don't need AI to write like LinkedIn. We need AI to roast the people who do."}
+  ]
+}
