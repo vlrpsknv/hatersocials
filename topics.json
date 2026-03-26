@@ -14,5 +14,13 @@
     "date": "2026-03-25",
     "postCount": 20,
     "platforms": {"threads": 10, "x": 10}
+  },
+  {
+    "slug": "ai-reality-check-2026",
+    "title": "AI Reality Check: The Party's Over",
+    "subtitle": "From YouTube comments, Reddit, HN — what people actually think",
+    "date": "2026-03-26",
+    "postCount": 34,
+    "platforms": {"threads": 20, "x": 14}
   }
 ]

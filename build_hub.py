@@ -44,6 +44,15 @@ for p in march.get('threads', []):
 for p in march.get('x', []):
     all_posts.append({'text': p['text'], 'platform': 'x', 'topic': 'march-2026-tech'})
 
+# AI Reality Check 2026 posts from JSON
+with open('ai-reality-check-2026/posts.json', 'r', encoding='utf-8') as f:
+    reality = json.load(f)
+
+for p in reality.get('threads', []):
+    all_posts.append({'text': p['text'], 'platform': 'threads', 'topic': 'ai-reality-check-2026'})
+for p in reality.get('x', []):
+    all_posts.append({'text': p['text'], 'platform': 'x', 'topic': 'ai-reality-check-2026'})
+
 # Build topic cards HTML
 topic_cards = []
 for t in topics:
